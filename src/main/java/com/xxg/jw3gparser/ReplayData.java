@@ -340,6 +340,22 @@ public class ReplayData {
 					case 0x75:
 						offset += 2;
 						break;
+			 // 网易对账平台录像新增Action ID
+                        case 145:
+                            offset += 5;
+                            break;
+
+                        case 149:
+                            offset += 5;
+                            break;
+
+                        case 107:
+                            offset += 49;
+                            break;
+
+                        case 0:
+                            offset += 9;
+                            break;
 					default:
 						throw new W3GException("Unkown action id: " + actionId);
 				}
